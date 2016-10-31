@@ -6,5 +6,8 @@
       by
       <%= User.find(project.creator).name %>
     </li>
+    <li>
+      <%= link_to 'project', project_path(project) %>
+    </li>
   <%end%>
 </ul>
