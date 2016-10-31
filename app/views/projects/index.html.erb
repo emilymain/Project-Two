@@ -1,0 +1,10 @@
+<h1>Projects</h1>
+<ul>
+  <%@projects.each do |project|%>
+    <li>
+      <%= project.title %>
+      by
+      <%= User.find(project.creator).name %>
+    </li>
+  <%end%>
+</ul>
