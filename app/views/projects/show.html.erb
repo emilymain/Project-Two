@@ -7,7 +7,7 @@
   funding? <%= @project.funding ? "Yes! We are funded!" : "Still working on it." %>
 </p>
 <p>
-  <%= @creator%>
+  <%= link_to @creator.name, user_path(@creator)%>
 </p>
 <p>
   <%@project.skills.each do |skill| %>

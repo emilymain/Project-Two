@@ -20,7 +20,7 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
-    @creator = User.find(@project.creator).name
+    @creator = User.find(@project.creator)
   end
 
   private
