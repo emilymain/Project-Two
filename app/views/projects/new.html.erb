@@ -12,6 +12,10 @@
     <%= f.label :funding %>
     <%= f.check_box :funding %>
   </div>
+  <div >
+  <%= f.label :skills_needed%>
+  <%= f.collection_check_boxes :skill_ids, Skill.all, :id, :name%>
+</div>
   <div>
     <%= f.submit %>
   </div>

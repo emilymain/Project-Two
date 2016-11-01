@@ -25,7 +25,7 @@ class ProjectsController < ApplicationController
 
   private
     def project_params
-      params.require(:project).permit(:title, :content, :funding, :creator)
+      params.require(:project).permit(:title, :content, :funding, skill_ids: [])
     end
 
 end

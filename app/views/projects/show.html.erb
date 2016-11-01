@@ -4,8 +4,13 @@
   <%= @project.content %>
 </p>
 <p>
-  funding?:<%= @project.funding ? "yaaaaay" : "booooooo" %>
+  funding? <%= @project.funding ? "Yes! We are funded!" : "Still working on it." %>
 </p>
 <p>
   <%= @creator%>
+</p>
+<p>
+  <%@project.skills.each do |skill| %>
+    <%= skill.name   %>
+  <% end %>
 </p>

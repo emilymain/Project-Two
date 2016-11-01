@@ -19,7 +19,7 @@ root 'welcome#index'
   get 'directory' => 'directory#index'
 
   resources :projects do
-      resources :comments
+    resources :comments
   end
 
 end
