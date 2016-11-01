@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Skill.destroy_all
 Skill.create([
   {name:'UX Designer'},
   {name:'UI Designer'},
@@ -15,5 +16,6 @@ Skill.create([
   {name: 'iOS Developer'},
   {name: 'ASP.net Developer'},
   {name: 'Project Manager'},
-  {name: 'Graphic Designer'}
+  {name: 'Graphic Designer'},
+  {name: 'Dev Ops'}
   ])
