@@ -1,13 +1,10 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
   def index
     @users = User.all
   end
 
   def show
-    @user = User.find(params[:id])
-    # if @user != User.find(session[:user_id])
-    #   redirect_to users_path
-    # end
   end
 
   def new
@@ -36,7 +33,13 @@ class UsersController < ApplicationController
     else
       render :edit
     end
+
   end
+  def destroy
+    @user.destroy
+    redirect_to new_user_path
+  end
+  
   private
 
   def user_params
