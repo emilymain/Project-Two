@@ -36,10 +36,15 @@ class UsersController < ApplicationController
 
   end
   def destroy
+    Project.all.each do |project|
+      if project.creator == @user.id
+        project.destroy
+      end 
+    end
     @user.destroy
     redirect_to new_user_path
   end
-  
+
   private
 
   def user_params

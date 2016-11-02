@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  before_action :set_project, :only => [:show, :edit, :update, :destroy]
   def index
     @projects = Project.all
   end
@@ -19,14 +20,20 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @project = Project.find(params[:id])
     @creator = User.find(@project.creator)
     @comment = Comment.new
   end
+  def destroy
+    @project.destroy
+    redirect_to directory_path
+  end
+
 
   private
     def project_params
       params.require(:project).permit(:title, :content, :funding, skill_ids: [])
     end
-
+    def set_project
+      @project = Project.find(params[:id])
+    end
 end

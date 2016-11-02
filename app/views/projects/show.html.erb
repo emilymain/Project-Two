@@ -15,9 +15,19 @@
   <% end %>
 </p>
 
+<%if @creator == current_user %>
+  <%= link_to 'Delete Project', @project, method: :delete, data: {confirm: 'Are You Sure?'}%>
+<%end%>
+
 <div>
   <%@project.comments.each do |comment|%>
-  <p><%= comment.content%> </p>
+  <p>
+    <%= link_to comment.user.name, user_path(comment.user) %>:
+    <%= comment.content%>
+    <% if current_user == comment.user %>
+    <%= link_to 'Delete Comment', project_comment_path(@project, comment), method: :delete, data: {confirm: 'Are You Sure?'}%>
+    <% end %>
+  </p>
   <% end %>
 </div>
 <%= render 'comment_form' %>
