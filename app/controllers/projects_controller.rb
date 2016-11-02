@@ -21,6 +21,7 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find(params[:id])
     @creator = User.find(@project.creator)
+    @comment = Comment.new
   end
 
   private

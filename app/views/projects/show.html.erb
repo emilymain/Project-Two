@@ -14,3 +14,10 @@
     <%= skill.name%>
   <% end %>
 </p>
+
+<div>
+  <%@project.comments.each do |comment|%>
+  <p><%= comment.content%> </p>
+  <% end %>
+</div>
+<%= render 'comment_form' %>
