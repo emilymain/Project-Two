@@ -29,9 +29,7 @@
 body input {
   color:black;
 }
-#user_image {
-  color: white;
-}
+
 .jumbotron{
   margin: 0 auto;
   text-align: center;
@@ -44,6 +42,14 @@ body input {
 .signup{
   text-align: center;
 }
-#LoggedIn {
-  margin-right: 20px;
+.img-responsive{
+  width: 200px;
+  top: 0;
+  right: 0;
+  bottom: 250px;
+  left: 0;
+  margin: auto;
+}
+#user_image {
+  color: black;
 }
