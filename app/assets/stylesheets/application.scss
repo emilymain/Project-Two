@@ -17,17 +17,33 @@
  */
  body{
    font-family: 'Josefin Sans', sans-serif;
-   color: white;
-   //#Gradient from uigradients.com
-   background: #000000; /* fallback for old browsers */
-   background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color: black;
+   background-color: white;
+  //  //#Gradient from uigradients.com
+  //  background: #000000; /* fallback for old browsers */
+  //  background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
+  //  background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
      }
+
+body input {
+  color:black;
+}
+#user_image {
+  color: white;
+}
 .jumbotron{
   margin: 0 auto;
+  text-align: center;
 }
 .title {
  text-align: center;
  font-weight: bold;
  font-size: 100px;
+}
+.signup{
+  text-align: center;
+}
+#LoggedIn {
+  margin-right: 20px;
 }
