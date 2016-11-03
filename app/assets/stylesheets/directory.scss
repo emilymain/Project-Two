@@ -1,3 +1,19 @@
 // Place all the styles related to the directory controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.img-responsive{
+  width: 200px;
+  top: 0;
+  right: 0;
+  bottom: 245px;
+  left: 0;
+  margin: auto;
+}
+.inner-container{
+  text-align: center;
+  font-size: 40px;
+}
+
+.text {
+  color: black;
+}

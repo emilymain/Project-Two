@@ -13,9 +13,9 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <%=image_tag "CT.png", class:"navbar_img-responsive", alt:"connectech"%>
-        <%= link_to 'Create a New Project', new_project_path %>
-        <%= link_to 'Search Projects', projects_path %>
-        <%= link_to 'Search Users', users_path %>
+        <%= link_to 'New Project', new_project_path, class:"text" %>
+        <%= link_to 'Search Projects', projects_path, class:"text" %>
+        <%= link_to 'Search Users', users_path, class:"text" %>
         <div class="navbar-right">
           <% if current_user %>
             Logged in as: <%=link_to current_user.name, user_path(current_user), class: "navbar-link" %><br>

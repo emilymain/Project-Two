@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "welcome";
+@import "sessions";
+@import "directory";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -31,11 +33,10 @@ body input {
 .navbar_img-responsive{
   width: 60px;
 }
-.navbar {
+.text {
   color: black;
-
-
 }
+
 #user_image {
   color: black;
 }

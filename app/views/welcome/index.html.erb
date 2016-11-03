@@ -11,12 +11,14 @@
             Missing a skill, but have big ideas? <br>
             Find the person you're looking for to make your project a reality.<br>
           </p>
+          <button type="button" class="btn btn-default navbar-btn">
+            <%=link_to 'Sign Up', new_user_path %>
+          </button>
+          <button type="button" class="btn btn-default navbar-btn">
+            <%= link_to 'Login', login_path %>
+          </button>
       </div>
-  <button type="button" class="btn btn-default navbar-btn">
-    <%=link_to 'Sign Up', new_user_path %>
-  </button>
 
-  <button type="button" class="btn btn-default navbar-btn">
-    <%= link_to 'Login', login_path %>
-  </button>
+
+
 </div>
