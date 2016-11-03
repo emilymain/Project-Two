@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "welcome";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -12,8 +13,6 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
  body{
    font-family: 'Josefin Sans', sans-serif;
@@ -29,26 +28,13 @@
 body input {
   color:black;
 }
+.navbar_img-responsive{
+  width: 60px;
+}
+.navbar {
+  color: black;
 
-.jumbotron{
-  margin: 0 auto;
-  text-align: center;
-}
-.title {
- text-align: center;
- font-weight: bold;
- font-size: 100px;
-}
-.signup{
-  text-align: center;
-}
-.img-responsive{
-  width: 200px;
-  top: 0;
-  right: 0;
-  bottom: 250px;
-  left: 0;
-  margin: auto;
+
 }
 #user_image {
   color: black;
