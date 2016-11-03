@@ -1,5 +1,5 @@
 <h1><%= @user.name %></h1>
-
+<%= image_tag @user.image.url(:small) %>
 <h3><%= @user.name %>'s Skills:</h3>
 <%@user.skills.each do |skill| %>
 <%= skill.name %><br>
