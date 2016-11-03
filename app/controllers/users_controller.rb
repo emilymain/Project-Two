@@ -22,9 +22,9 @@ class UsersController < ApplicationController
   end
 
   def  edit
-    if @user != User.find(session[:user_id])
+     if @user != User.find(session[:user_id])
     redirect_to users_path
-    end
+     end
   end
 
   def update
