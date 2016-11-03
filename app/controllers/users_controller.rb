@@ -2,9 +2,11 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   def index
     @users = User.all
+    render layout: "navbar"
   end
 
   def show
+    render layout: "navbar"
   end
 
   def new

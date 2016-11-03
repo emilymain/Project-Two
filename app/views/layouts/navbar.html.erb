@@ -10,29 +10,21 @@
   </head>
 
   <body>
-<div id="main-container" class="container-fluid">
-  <div class="row">
-    <div>
-      <%= link_to 'Create a New Project', new_project_path %>
-    </div>
-    <div>
-      <%= link_to 'Search Projects', projects_path %>
-    </div>
-    <div>
-      <%= link_to 'Search Users', users_path %>
-    </div>
- <% if current_user %>
- <p id="LoggedIn" class="navbar-text navbar-right">Logged in as:<a href="#" class="navbar-link">
-    <%= current_user.name %><br>
-    <%= link_to 'Log Out', logout_path, method: :delete %>
-  </a>
-</p>
-
-<% end %>
-</div>
-
-    <%= yield %>
-
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <%= link_to 'Create a New Project', new_project_path %>
+        <%= link_to 'Search Projects', projects_path %>
+        <%= link_to 'Search Users', users_path %>
+        <div class="navbar-right">
+          <% if current_user %>
+            Logged in as: <%=link_to current_user.name, user_path(current_user), class: "navbar-link" %><br>
+            <%= link_to 'Log Out', logout_path, method: :delete %>
+          <% end %>
+        </div>
+      </div>
+    </nav>
+    <div id="main-container" class="container"
+      <%= yield %>
     </div>
   </body>
 </html>

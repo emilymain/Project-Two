@@ -18,11 +18,13 @@ class ProjectsController < ApplicationController
 
   def new
     @project = Project.new
+    render layout: "navbar"
   end
 
   def show
     @creator = User.find(@project.creator)
     @comment = Comment.new
+    render layout: "navbar"
   end
   def destroy
     @project.destroy
