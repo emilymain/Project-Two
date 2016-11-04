@@ -1,5 +1,5 @@
 <h1>Projects</h1>
-<ul>
+<!-- <ul>
   <%@projects.each do |project|%>
     <li>
       <%= link_to project.title, project_path(project) %>
@@ -7,4 +7,21 @@
       <%= User.find(project.creator).name %>
     </li>
   <%end%>
-</ul>
+</ul> -->
+
+<div class="row">
+  <% @projects.each do |project| %>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <h3 class="user-name"><%= link_to project.title, project%></h3>
+        <div class="caption">
+          <div>
+            <%project.skills.each do |skill| %>
+             Looking for: <span id="skill-needed"> <%=skill.name%></span>
+            <%end%>
+          </div>
+        </div>
+      </div>
+    </div>
+  <%end%>
+</div>
