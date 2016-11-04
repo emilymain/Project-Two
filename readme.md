@@ -26,7 +26,7 @@ I used Ruby on Rails to build this application and bootstrap was used to help wi
 * Heroku
 
 #####Installation Instructions 
-* To run the app in your browser you can visit: https://grim-ghoul-62888.herokuapp.com/
+* To run the app in your browser you can visit: <https://grim-ghoul-62888.herokuapp.com/>
 * Visit <https://github.com/emilymain/Project-Two>
 * Click the 'Clone or Download'
 * In your terminal type in the following commands:
