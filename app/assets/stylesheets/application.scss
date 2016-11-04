@@ -30,11 +30,19 @@
 body input {
   color:black;
 }
+
 .navbar_img-responsive{
   width: 60px;
 }
-.text {
+.text-navbar {
+  padding-left: 20px;
+  padding-right: 20px;
   color: black;
+}
+.btn{
+  border-radius:0;
+  background-color: transparent;
+  border: 1px solid black;
 }
 
 #user_image {
