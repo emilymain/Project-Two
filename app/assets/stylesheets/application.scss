@@ -29,6 +29,10 @@ body input {
 //   font-size: 40px;
 // }
 
+h1{
+  font-size: 45px;
+}
+
 .navbar_img-responsive{
   width: 60px;
 }
@@ -52,7 +56,12 @@ body input {
 .user-name{
   text-align: center;
 }
+.project-container{
+  text-align: center;
+  font-size: 25px;
+}
 #skill-needed{
+  font-size: 15px;
   font-weight: bold;
   overflow: scroll;
 }
