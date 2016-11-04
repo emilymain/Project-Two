@@ -2,35 +2,34 @@
 <h1><%= @project.title %></h1>
 <div class="container">
   <div class="project-container">
-<div>
-  <%= @project.content %>
-</div>
-<div>
-  funding? <%= @project.funding ? "Yes! We are funded!" : "Still working on it." %>
-</div>
-<div>
-  <%= link_to @creator.name, user_path(@creator)%>
-</div>
-<div>
-  <%@project.skills.each do |skill| %>
-    I am looking for a <span id="skill-needed"><%= skill.name%></span>
-  <% end %>
-</div>
-
-<%if @creator == current_user %>
-  <%= link_to 'Delete Project', @project, method: :delete, data: {confirm: 'Are You Sure?'}%>
-<%end%>
-</div>
+  <div>
+    <%= @project.content %>
+  </div>
+    <div>
+      funding? <%= @project.funding ? "Yes! We are funded!" : "Still working on it." %>
+    </div>
+    <div>
+      <%= link_to @creator.name, user_path(@creator)%>
+    </div>
+    <div>
+      <%@project.skills.each do |skill| %>
+        I am looking for a <span id="skill-needed"><%= skill.name%></span>
+      <% end %>
+    </div>
+    <%if @creator == current_user %>
+    <%= link_to 'Delete Project', @project, method: :delete, data: {confirm: 'Are You Sure?'}%>
+    <%end%>
+  </div>
 </div>
 <div>
   <%@project.comments.each do |comment|%>
-  <div>
-    <%= link_to comment.user.name, user_path(comment.user) %>:
-    <%= comment.content%>
-    <% if current_user == comment.user %>
-    <%= link_to 'Delete Comment', project_comment_path(@project, comment), method: :delete, data: {confirm: 'Are You Sure?'}%>
-    <% end %>
-  </div>
+    <div>
+      <%= link_to comment.user.name, user_path(comment.user) %>:
+      <%= comment.content%>
+      <% if current_user == comment.user %>
+      <%= link_to 'Delete Comment', project_comment_path(@project, comment), method: :delete, data: {confirm: 'Are You Sure?'}%>
+      <% end %>
+    </div>
   <% end %>
 </div>
 

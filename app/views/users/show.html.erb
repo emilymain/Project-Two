@@ -16,5 +16,5 @@
   <%= link_to 'Edit Account', edit_user_path %>
 <% end %>
 <% if @user == current_user %>
-    <%= link_to 'Delete Account', @user, method: :delete, data: {confirm: 'Are you sure?'} %>
+  <%= link_to 'Delete Account', @user, method: :delete, data: {confirm: 'Are you sure?'} %>
 <% end %>

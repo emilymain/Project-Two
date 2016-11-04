@@ -16,11 +16,12 @@
  * It is generally better to create a new file per style scope.
  *
  */
- body{
+
+body{
    font-family: 'Josefin Sans', sans-serif;
    color: black;
    background-color: white;
-     }
+}
 
 body input {
   color:black;
@@ -33,7 +34,7 @@ h1{
   font-size: 45px;
 }
 
-.navbar_img-responsive{
+.navbar_img-responsive {
   width: 60px;
 }
 .text-navbar {
@@ -41,26 +42,26 @@ h1{
   padding-right: 20px;
   color: black;
 }
-.btn{
+.btn {
   border-radius:0;
   background-color: transparent;
   border: 1px solid black;
 }
-.thumbnail{
+.thumbnail {
   height: 150px;
   overflow: scroll;
 }
-.caption{
+.caption {
   text-align: center;
 }
-.user-name{
+.user-name {
   text-align: center;
 }
-.project-container{
+.project-container {
   text-align: center;
   font-size: 25px;
 }
-#skill-needed{
+#skill-needed {
   font-size: 15px;
   font-weight: bold;
   overflow: scroll;
